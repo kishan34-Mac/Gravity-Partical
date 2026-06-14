@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23080808'/><circle cx='16' cy='16' r='12' fill='none' stroke='%23818cf8' stroke-width='2'/></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gravity.io</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { height: 100%; overflow: hidden; }
+      body { font-family: 'Inter', system-ui, sans-serif; background: #04040e; color: rgba(255,255,255,0.85); }
+      .mono { font-family: 'JetBrains Mono', monospace; }
+      canvas { display: block; }
+      input[type="range"] { -webkit-appearance: none; background: transparent; cursor: pointer; }
+      input[type="range"]::-webkit-slider-runnable-track { height: 2px; background: rgba(255,255,255,0.1); border-radius: 1px; }
+      input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 10px; height: 10px; border-radius: 50%; background: #fff; margin-top: -4px; }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="h-full flex flex-col"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
